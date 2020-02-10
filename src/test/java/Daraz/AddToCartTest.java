@@ -1,7 +1,6 @@
 package Daraz;
 
 import java.io.IOException;
-import java.util.concurrent.TimeUnit;
 
 import Daraz.Common.Login;
 import Daraz.pageObjects.LandingPage;
@@ -12,7 +11,6 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.FluentWait;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.*;
 import org.openqa.selenium.JavascriptExecutor;
@@ -30,7 +28,6 @@ public class AddToCartTest extends base {
     WebDriverWait wait;
     JavascriptExecutor executor;
     Login login;
-    FluentWait fluentWait;
 
     @BeforeClass
     public void initialize() throws IOException {
@@ -42,7 +39,7 @@ public class AddToCartTest extends base {
         wait = new WebDriverWait(driver, 10);
         executor = (JavascriptExecutor)driver;
         login = new Login(driver);
-        fluentWait= new FluentWait(driver).withTimeout(10,TimeUnit.SECONDS).pollingEvery(1000, TimeUnit.MILLISECONDS);
+
     }
 
     @Test
