@@ -56,13 +56,13 @@ public class AddToCartTest extends base {
             //wait.until(ExpectedConditions.elementToBeClickable(parent));
             actions.moveToElement(parent).build().perform();
             Thread.sleep(3000);
-            executor.executeScript("window.scrollBy(0,75)");
+            executor.executeScript("window.scrollBy(0,100)");
             //wait.until(ExpectedConditions.elementToBeClickable(addToCartBtn));
             addToCartBtn.click();
             //wait.until(ExpectedConditions.elementToBeClickable(searchPage.getPopUpClose()));
             Thread.sleep(4000);
             searchPage.getPopUpClose().click();
-            executor.executeScript("window.scrollBy(0,-75)");
+            executor.executeScript("window.scrollBy(0,-100)");
 
             count++;
 
