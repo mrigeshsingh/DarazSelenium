@@ -1,0 +1,17 @@
+# Created on 2020-02-07T17:13:58.165
+TestSet has not finished before stream error has appeared >> initializing exit by non-null configuration: DEFAULT
+java.io.EOFException
+	at java.io.DataInputStream.readInt(DataInputStream.java:392)
+	at org.apache.maven.surefire.booter.MasterProcessCommand.decode(MasterProcessCommand.java:115)
+	at org.apache.maven.surefire.booter.CommandReader$CommandRunnable.run(CommandReader.java:386)
+	at java.lang.Thread.run(Thread.java:748)
+
+
+# Created on 2020-02-07T17:14:05.164
+Unexpected IOException: 6,1,Daraz.AddToCartTest,addToCart(Daraz.AddToCartTest),null,null,null
+
+
+# Created on 2020-02-07T17:14:11.783
+Unexpected IOException: 8,1,Daraz.DeleteCartItemsTest,validateDelteCartItems(Daraz.DeleteCartItemsTest),null,Index: 0\002C Size: 0,null,Index: 0\002C Size: 0,DeleteCartItemsTest.validateDelteCartItems:53 \00BB IndexOutOfBounds Index: 0\002C Siz...,java.lang.IndexOutOfBoundsException: Index: 0\002C Size: 0\000A\0009at Daraz.DeleteCartItemsTest.validateDelteCartItems(DeleteCartItemsTest.java:53)\000A
+
+

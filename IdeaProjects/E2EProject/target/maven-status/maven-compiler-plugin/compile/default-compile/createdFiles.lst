@@ -1,0 +1,6 @@
+Daraz\pageObjects\LoginPage.class
+Daraz\pageObjects\SearchPage.class
+Daraz\pageObjects\LandingPage.class
+resources\base.class
+Daraz\pageObjects\CartPage.class
+resources\ExtentReporterNG.class
