@@ -1,26 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8ab94d90-21aa-4cb6-babb-08341653f670" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+    <list default="true" id="35b216c9-4dc2-480d-8b50-c35c96ea0318" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/test.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/E2EProject.iml" beforeDir="false" afterPath="$PROJECT_DIR$/E2EProject.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/debug.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/prints.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/prints.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Daraz/pageObjects/CartPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Daraz/pageObjects/CartPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Daraz/pageObjects/LandingPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Daraz/pageObjects/LandingPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Daraz/pageObjects/LoginPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Daraz/pageObjects/LoginPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Daraz/pageObjects/SearchPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Daraz/pageObjects/SearchPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/resources/ExtentReporterNG.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/resources/ExtentReporterNG.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/resources/base.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/resources/base.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/drivers/chromedriver.exe" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/drivers/chromedriver.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/screenshots/addToCartscreenshot.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/screenshots/validateDelteCartItemsscreenshot.png" beforeDir="false" afterPath="$PROJECT_DIR$/target/screenshots/validateDelteCartItemsscreenshot.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/ExtentReportsTestNG.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/ExtentReportsTestNG.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/Suite/Add To Cart Test.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/Suite/Add To Cart Test.html" afterDir="false" />
@@ -50,17 +42,10 @@
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/Suite/methods-alphabetical.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/Suite/methods-alphabetical.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/Suite/methods-not-run.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/Suite/methods-not-run.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/Suite/methods.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/Suite/methods.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/Suite/testng.xml.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/Suite/testng.xml.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/Suite/toc.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/Suite/toc.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/testng-failed.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/testng-failed.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/testng-results.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/testng-results.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/Daraz/AddToCartTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Daraz/AddToCartTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/Daraz/Common/Login.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Daraz/Common/Login.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/Daraz/Common/listeners.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Daraz/Common/listeners.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/Daraz/DeleteCartItemsTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Daraz/DeleteCartItemsTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/Daraz/LandingPageTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Daraz/LandingPageTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/Daraz/LoginPageTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Daraz/LoginPageTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,53 +55,54 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectId" id="1XcRGPC22z1tZMBYgkD844o8Jol" />
+  <component name="ProjectId" id="1XcaEfa42IKX0nds4LJvarUlQfu" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="project.structure.last.edited" value="Project" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="configurable.group.tools" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="8ab94d90-21aa-4cb6-babb-08341653f670" name="Default Changelist" comment="" />
-      <created>1581343299735</created>
+      <changelist id="35b216c9-4dc2-480d-8b50-c35c96ea0318" name="Default Changelist" comment="" />
+      <created>1581347727634</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1581343299735</updated>
+      <updated>1581347727634</updated>
     </task>
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1323" height="212" key="GridCell.Tab.0.bottom" timestamp="1581343587339">
+    <state x="463" y="85" key="FileChooserDialogImpl" timestamp="1581347857575">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="212" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1581343587339" />
-    <state width="1323" height="212" key="GridCell.Tab.0.center" timestamp="1581343587339">
+    <state x="463" y="85" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1581347857575" />
+    <state width="1323" height="161" key="GridCell.Tab.0.bottom" timestamp="1581348721206">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="212" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1581343587339" />
-    <state width="1323" height="212" key="GridCell.Tab.0.left" timestamp="1581343587339">
+    <state width="1323" height="161" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1581348721206" />
+    <state width="1323" height="161" key="GridCell.Tab.0.center" timestamp="1581348721206">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="212" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1581343587339" />
-    <state width="1323" height="212" key="GridCell.Tab.0.right" timestamp="1581343587339">
+    <state width="1323" height="161" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1581348721206" />
+    <state width="1323" height="161" key="GridCell.Tab.0.left" timestamp="1581348721205">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="212" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1581343587339" />
-    <state x="163" y="0" key="SettingsEditor" timestamp="1581343538445">
+    <state width="1323" height="161" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1581348721205" />
+    <state width="1323" height="161" key="GridCell.Tab.0.right" timestamp="1581348721206">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="163" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1581343538445" />
+    <state width="1323" height="161" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1581348721206" />
+    <state x="391" y="193" key="com.intellij.ide.util.TipDialog" timestamp="1581347731694">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="391" y="193" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1581347731694" />
   </component>
 </project>

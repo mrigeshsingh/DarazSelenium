@@ -23,7 +23,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -48,7 +48,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
-                    <span>C:\Users\Mrigesh\DarazSelenium\testng.xml</span>
+                    <span>C:\Users\Mrigesh\IdeaProjects\DarazSelenium\testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -90,7 +90,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">5 methods, 2 failed,   3 passed</span>
+                    <span class="method-stats">5 methods, 1 failed,   4 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -102,11 +102,6 @@
                       <span>
                         <img src="failed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="Daraz.DeleteCartItemsTest" class="method navigator-link" hash-for-method="validateDelteCartItems">validateDelteCartItems</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="Daraz.LandingPageTest" class="method navigator-link" hash-for-method="validateNavigationBarIsDisplayed">validateNavigationBarIsDisplayed</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Suite -->
@@ -130,6 +125,11 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="Daraz.LandingPageTest" class="method navigator-link" hash-for-method="validateNavigationBarIsDisplayed">validateNavigationBarIsDisplayed</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="Daraz.LandingPageTest" class="method navigator-link" hash-for-method="validateSearchBarIsDisplayed">validateSearchBarIsDisplayed</a> <!-- method navigator-link -->
                       </span>
                       <br/>
@@ -148,29 +148,6 @@
           <div class="suite-Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
-              <span class="class-name">Daraz.LandingPageTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="validateNavigationBarIsDisplayed">
-                  </a> <!-- validateNavigationBarIsDisplayed -->
-                  <span class="method-name">validateNavigationBarIsDisplayed</span>
-                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
-	at Daraz.LandingPageTest.validateNavigationBarIsDisplayed(LandingPageTest.java:27)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at java.base/java.lang.Thread.run(Thread.java:830)
-... Removed 20 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-failed -->
-          <div class="suite-Suite-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
               <span class="class-name">Daraz.DeleteCartItemsTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -182,13 +159,13 @@
                   <div class="stack-trace">org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
   (Session info: chrome=79.0.3945.130)
   (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 10.0.18362 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 750 milliseconds
+Command duration or timeout: 4.61 seconds
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
 Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
 System info: host: &apos;DESKTOP-4FPH6EQ&apos;, ip: &apos;192.168.0.111&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;13.0.2&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73), userDataDir=C:\Users\Mrigesh\AppData\Local\Temp\scoped_dir18640_22121}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=79.0.3945.130, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=false, acceptInsecureCerts=false, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
-Session ID: f26ae9db890e3a3c60d2064d5ae87417
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73), userDataDir=C:\Users\Mrigesh\AppData\Local\Temp\scoped_dir17376_91}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=79.0.3945.130, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=false, acceptInsecureCerts=false, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: 5fb2363fa7b5ee273d9ed26aaaf62ddf
 	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
 	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:671)
@@ -219,6 +196,13 @@ Session ID: f26ae9db890e3a3c60d2064d5ae87417
               <span class="class-name">Daraz.LandingPageTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateNavigationBarIsDisplayed">
+                  </a> <!-- validateNavigationBarIsDisplayed -->
+                  <span class="method-name">validateNavigationBarIsDisplayed</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
                   <a name="validateSearchBarIsDisplayed">
@@ -261,7 +245,7 @@ Session ID: f26ae9db890e3a3c60d2064d5ae87417
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Mrigesh\DarazSelenium\testng.xml</span>
+            <span class="header-content">C:\Users\Mrigesh\IdeaProjects\DarazSelenium\testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -342,28 +326,28 @@ data.addRows(5);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'addToCart')
 data.setCell(0, 2, 'Daraz.AddToCartTest')
-data.setCell(0, 3, 55881);
+data.setCell(0, 3, 39533);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'validateLogin')
 data.setCell(1, 2, 'Daraz.LoginPageTest')
-data.setCell(1, 3, 34284);
+data.setCell(1, 3, 21501);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'validateDelteCartItems')
 data.setCell(2, 2, 'Daraz.DeleteCartItemsTest')
-data.setCell(2, 3, 31730);
+data.setCell(2, 3, 18150);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'validateNavigationBarIsDisplayed')
+data.setCell(3, 1, 'validateSearchBarIsDisplayed')
 data.setCell(3, 2, 'Daraz.LandingPageTest')
-data.setCell(3, 3, 469);
+data.setCell(3, 3, 717);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'validateSearchBarIsDisplayed')
+data.setCell(4, 1, 'validateNavigationBarIsDisplayed')
 data.setCell(4, 2, 'Daraz.LandingPageTest')
-data.setCell(4, 3, 338);
+data.setCell(4, 3, 529);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 2 minutes</span>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -389,13 +373,6 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">Daraz.AddToCartTest</div> <!-- chronological-class-name -->
-              <div class="configuration-class before">
-                <span class="method-name">initialize</span>
-                <span class="method-start">0 ms</span>
-              </div> <!-- configuration-class before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
               <div class="chronological-class-name">Daraz.LandingPageTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">initialize</span>
@@ -404,6 +381,13 @@ return data;
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">Daraz.LoginPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">initialize</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-class before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Daraz.AddToCartTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">initialize</span>
                 <span class="method-start">0 ms</span>
@@ -417,12 +401,32 @@ return data;
               </div> <!-- configuration-class before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
+              <div class="chronological-class-name">Daraz.AddToCartTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">addToCart</span>
+                <span class="method-start">62707 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
               <div class="chronological-class-name">Daraz.LandingPageTest</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">validateNavigationBarIsDisplayed</span>
-                <span class="method-start">71764 ms</span>
+                <span class="method-start">62944 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">validateSearchBarIsDisplayed</span>
+                <span class="method-start">63482 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">64199 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Daraz.LoginPageTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">validateLogin</span>
+                <span class="method-start">64885 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
@@ -431,53 +435,28 @@ return data;
                 <img src="failed.png">
                 </img>
                 <span class="method-name">validateDelteCartItems</span>
-                <span class="method-start">72121 ms</span>
+                <span class="method-start">72216 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">Daraz.LoginPageTest</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">validateLogin</span>
-                <span class="method-start">72743 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">Daraz.LandingPageTest</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">validateSearchBarIsDisplayed</span>
-                <span class="method-start">73475 ms</span>
-              </div> <!-- test-method -->
               <div class="configuration-class after">
-                <span class="method-name">teardown</span>
-                <span class="method-start">73813 ms</span>
+                <span class="method-name">tearDown</span>
+                <span class="method-start">86387 ms</span>
               </div> <!-- configuration-class after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">Daraz.AddToCartTest</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">addToCart</span>
-                <span class="method-start">74380 ms</span>
-              </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">Daraz.DeleteCartItemsTest</div> <!-- chronological-class-name -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">105258 ms</span>
-              </div> <!-- configuration-class after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">Daraz.LoginPageTest</div> <!-- chronological-class-name -->
-              <div class="configuration-class after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">107027 ms</span>
+                <span class="method-start">91226 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">Daraz.AddToCartTest</div> <!-- chronological-class-name -->
               <div class="configuration-class after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">130261 ms</span>
+                <span class="method-start">102240 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

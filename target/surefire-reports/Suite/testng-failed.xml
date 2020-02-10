@@ -5,35 +5,6 @@
     <listener class-name="Daraz.Common.listeners"/>
     <listener class-name="resources.ExtentReporterNG"/>
   </listeners>
-  <test parallel="tests" name="Landing Page Test(failed)">
-    <classes>
-      <class name="Daraz.LandingPageTest">
-        <methods>
-          <include name="validateNavigationBarIsDisplayed"/>
-          <include name="initialize"/>
-          <include name="teardown"/>
-        </methods>
-      </class> <!-- Daraz.LandingPageTest -->
-      <class name="Daraz.LoginPageTest">
-        <methods>
-          <include name="initialize"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- Daraz.LoginPageTest -->
-      <class name="Daraz.AddToCartTest">
-        <methods>
-          <include name="initialize"/>
-          <include name="teardown"/>
-        </methods>
-      </class> <!-- Daraz.AddToCartTest -->
-      <class name="Daraz.DeleteCartItemsTest">
-        <methods>
-          <include name="initializeBrower"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- Daraz.DeleteCartItemsTest -->
-    </classes>
-  </test> <!-- Landing Page Test(failed) -->
   <test parallel="tests" name="Delete From Cart Test(failed)">
     <classes>
       <class name="Daraz.LandingPageTest">
