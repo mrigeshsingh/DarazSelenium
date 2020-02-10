@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="5" passed="5">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="86283" started-at="2020-02-10T07:30:33Z" finished-at="2020-02-10T07:32:00Z">
+    <groups>
+    </groups>
+    <test name="Landing Page Test" duration-ms="33741" started-at="2020-02-10T07:30:33Z" finished-at="2020-02-10T07:31:07Z">
+      <class name="Daraz.LandingPageTest">
+        <test-method status="PASS" signature="initialize()[pri:0, instance:Daraz.LandingPageTest@f03482]" name="initialize" is-config="true" duration-ms="32953" started-at="2020-02-10T13:15:33Z" finished-at="2020-02-10T13:16:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method status="PASS" signature="validateNavigationBarIsDisplayed()[pri:0, instance:Daraz.LandingPageTest@f03482]" name="validateNavigationBarIsDisplayed" duration-ms="158" started-at="2020-02-10T13:16:06Z" finished-at="2020-02-10T13:16:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateNavigationBarIsDisplayed -->
+        <test-method status="PASS" signature="validateSearchBarIsDisplayed()[pri:0, instance:Daraz.LandingPageTest@f03482]" name="validateSearchBarIsDisplayed" duration-ms="65" started-at="2020-02-10T13:16:07Z" finished-at="2020-02-10T13:16:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateSearchBarIsDisplayed -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:Daraz.LandingPageTest@f03482]" name="teardown" is-config="true" duration-ms="560" started-at="2020-02-10T13:16:07Z" finished-at="2020-02-10T13:16:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- Daraz.LandingPageTest -->
+    </test> <!-- Landing Page Test -->
+    <test name="Delete From Cart Test" duration-ms="63667" started-at="2020-02-10T07:30:33Z" finished-at="2020-02-10T07:31:37Z">
+      <class name="Daraz.DeleteCartItemsTest">
+        <test-method status="PASS" signature="initializeBrower()[pri:0, instance:Daraz.DeleteCartItemsTest@12c9a9c]" name="initializeBrower" is-config="true" duration-ms="33560" started-at="2020-02-10T13:15:33Z" finished-at="2020-02-10T13:16:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeBrower -->
+        <test-method status="PASS" signature="validateDelteCartItems()[pri:0, instance:Daraz.DeleteCartItemsTest@12c9a9c]" name="validateDelteCartItems" duration-ms="28257" started-at="2020-02-10T13:16:07Z" finished-at="2020-02-10T13:16:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateDelteCartItems -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:Daraz.DeleteCartItemsTest@12c9a9c]" name="tearDown" is-config="true" duration-ms="1849" started-at="2020-02-10T13:16:35Z" finished-at="2020-02-10T13:16:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- Daraz.DeleteCartItemsTest -->
+    </test> <!-- Delete From Cart Test -->
+    <test name="Login Page Test" duration-ms="66223" started-at="2020-02-10T07:30:33Z" finished-at="2020-02-10T07:31:40Z">
+      <class name="Daraz.LoginPageTest">
+        <test-method status="PASS" signature="initialize()[pri:0, instance:Daraz.LoginPageTest@12325ad]" name="initialize" is-config="true" duration-ms="39492" started-at="2020-02-10T13:15:33Z" finished-at="2020-02-10T13:16:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method status="PASS" signature="validateLogin()[pri:0, instance:Daraz.LoginPageTest@12325ad]" name="validateLogin" duration-ms="24979" started-at="2020-02-10T13:16:13Z" finished-at="2020-02-10T13:16:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateLogin -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:Daraz.LoginPageTest@12325ad]" name="tearDown" is-config="true" duration-ms="1752" started-at="2020-02-10T13:16:38Z" finished-at="2020-02-10T13:16:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- Daraz.LoginPageTest -->
+    </test> <!-- Login Page Test -->
+    <test name="Add To Cart Test" duration-ms="86283" started-at="2020-02-10T07:30:33Z" finished-at="2020-02-10T07:32:00Z">
+      <class name="Daraz.AddToCartTest">
+        <test-method status="PASS" signature="initialize()[pri:0, instance:Daraz.AddToCartTest@1e98b1c]" name="initialize" is-config="true" duration-ms="37288" started-at="2020-02-10T13:15:33Z" finished-at="2020-02-10T13:16:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method status="PASS" signature="addToCart()[pri:0, instance:Daraz.AddToCartTest@1e98b1c]" name="addToCart" duration-ms="46663" started-at="2020-02-10T13:16:11Z" finished-at="2020-02-10T13:16:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addToCart -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:Daraz.AddToCartTest@1e98b1c]" name="teardown" is-config="true" duration-ms="2332" started-at="2020-02-10T13:16:57Z" finished-at="2020-02-10T13:17:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- Daraz.AddToCartTest -->
+    </test> <!-- Add To Cart Test -->
+  </suite> <!-- Suite -->
+</testng-results>

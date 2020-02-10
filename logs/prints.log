@@ -22,3 +22,13 @@
 10:10:40.932 [TestNG] INFO  resources.base - Search bar is displayed
 10:24:32.647 [TestNG] INFO  resources.base - Navigation bar is displayed
 10:24:32.766 [TestNG] INFO  resources.base - Search bar is displayed
+13:00:50.925 [TestNG] INFO  resources.base - Navigation bar is displayed
+13:00:51.439 [TestNG] INFO  resources.base - Search bar is displayed
+13:01:15.271 [TestNG] INFO  resources.base - Cart is Empty
+2020-02-10 13:05:44,521[TestNG] INFO  resources.base - Navigation bar is displayed
+2020-02-10 13:05:44,709[TestNG] INFO  resources.base - Search bar is displayed
+2020-02-10 13:08:07.882[TestNG] INFO  resources.base - Navigation bar is displayed
+2020-02-10 13:08:07.945[TestNG] INFO  resources.base - Search bar is displayed
+2020-02-10 13:16:07.086[TestNG] INFO  resources.base - Navigation bar is displayed
+2020-02-10 13:16:07.158[TestNG] INFO  resources.base - Search bar is displayed
+2020-02-10 13:16:35.643[TestNG] INFO  resources.base - Cart is Empty
