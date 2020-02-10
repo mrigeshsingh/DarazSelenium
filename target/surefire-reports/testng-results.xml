@@ -1,141 +1,77 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" total="5" passed="4">
+<testng-results skipped="0" failed="0" total="5" passed="5">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="109537" started-at="2020-02-10T09:47:33Z" finished-at="2020-02-10T09:49:23Z">
+  <suite name="Suite" duration-ms="93327" started-at="2020-02-10T11:48:45Z" finished-at="2020-02-10T11:50:19Z">
     <groups>
     </groups>
-    <test name="Landing Page Test" duration-ms="56071" started-at="2020-02-10T09:47:33Z" finished-at="2020-02-10T09:48:29Z">
+    <test name="Landing Page Test" duration-ms="38059" started-at="2020-02-10T11:48:45Z" finished-at="2020-02-10T11:49:23Z">
       <class name="Daraz.LandingPageTest">
-        <test-method status="PASS" signature="initialize()[pri:0, instance:Daraz.LandingPageTest@f03482]" name="initialize" is-config="true" duration-ms="49705" started-at="2020-02-10T15:32:33Z" finished-at="2020-02-10T15:33:23Z">
+        <test-method status="PASS" signature="initialize()[pri:0, instance:Daraz.LandingPageTest@f03482]" name="initialize" is-config="true" duration-ms="35190" started-at="2020-02-10T17:33:45Z" finished-at="2020-02-10T17:34:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialize -->
-        <test-method status="PASS" signature="validateNavigationBarIsDisplayed()[pri:0, instance:Daraz.LandingPageTest@f03482]" name="validateNavigationBarIsDisplayed" duration-ms="3217" started-at="2020-02-10T15:33:23Z" finished-at="2020-02-10T15:33:26Z">
+        <test-method status="PASS" signature="validateNavigationBarIsDisplayed()[pri:0, instance:Daraz.LandingPageTest@f03482]" name="validateNavigationBarIsDisplayed" duration-ms="177" started-at="2020-02-10T17:34:20Z" finished-at="2020-02-10T17:34:21Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateNavigationBarIsDisplayed -->
-        <test-method status="PASS" signature="validateSearchBarIsDisplayed()[pri:0, instance:Daraz.LandingPageTest@f03482]" name="validateSearchBarIsDisplayed" duration-ms="690" started-at="2020-02-10T15:33:26Z" finished-at="2020-02-10T15:33:27Z">
+        <test-method status="PASS" signature="validateSearchBarIsDisplayed()[pri:0, instance:Daraz.LandingPageTest@f03482]" name="validateSearchBarIsDisplayed" duration-ms="336" started-at="2020-02-10T17:34:21Z" finished-at="2020-02-10T17:34:21Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateSearchBarIsDisplayed -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:Daraz.LandingPageTest@f03482]" name="teardown" is-config="true" duration-ms="2447" started-at="2020-02-10T15:33:27Z" finished-at="2020-02-10T15:33:29Z">
+        <test-method status="PASS" signature="teardown()[pri:0, instance:Daraz.LandingPageTest@f03482]" name="teardown" is-config="true" duration-ms="2348" started-at="2020-02-10T17:34:21Z" finished-at="2020-02-10T17:34:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- Daraz.LandingPageTest -->
     </test> <!-- Landing Page Test -->
-    <test name="Login Page Test" duration-ms="83871" started-at="2020-02-10T09:47:33Z" finished-at="2020-02-10T09:48:57Z">
+    <test name="Login Page Test" duration-ms="57718" started-at="2020-02-10T11:48:45Z" finished-at="2020-02-10T11:49:43Z">
       <class name="Daraz.LoginPageTest">
-        <test-method status="PASS" signature="initialize()[pri:0, instance:Daraz.LoginPageTest@12325ad]" name="initialize" is-config="true" duration-ms="51054" started-at="2020-02-10T15:32:33Z" finished-at="2020-02-10T15:33:24Z">
+        <test-method status="PASS" signature="initialize()[pri:0, instance:Daraz.LoginPageTest@12325ad]" name="initialize" is-config="true" duration-ms="35099" started-at="2020-02-10T17:33:45Z" finished-at="2020-02-10T17:34:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialize -->
-        <test-method status="PASS" signature="validateLogin()[pri:0, instance:Daraz.LoginPageTest@12325ad]" name="validateLogin" duration-ms="31043" started-at="2020-02-10T15:33:24Z" finished-at="2020-02-10T15:33:55Z">
+        <test-method status="PASS" signature="validateLogin()[pri:0, instance:Daraz.LoginPageTest@12325ad]" name="validateLogin" duration-ms="20583" started-at="2020-02-10T17:34:20Z" finished-at="2020-02-10T17:34:41Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateLogin -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:Daraz.LoginPageTest@12325ad]" name="tearDown" is-config="true" duration-ms="1765" started-at="2020-02-10T15:33:55Z" finished-at="2020-02-10T15:33:57Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:Daraz.LoginPageTest@12325ad]" name="tearDown" is-config="true" duration-ms="2025" started-at="2020-02-10T17:34:41Z" finished-at="2020-02-10T17:34:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- Daraz.LoginPageTest -->
     </test> <!-- Login Page Test -->
-    <test name="Delete From Cart Test" duration-ms="98526" started-at="2020-02-10T09:47:33Z" finished-at="2020-02-10T09:49:12Z">
-      <class name="Daraz.DeleteCartItemsTest">
-        <test-method status="PASS" signature="initializeBrower()[pri:0, instance:Daraz.DeleteCartItemsTest@12c9a9c]" name="initializeBrower" is-config="true" duration-ms="51112" started-at="2020-02-10T15:32:33Z" finished-at="2020-02-10T15:33:24Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initializeBrower -->
-        <test-method status="PASS" signature="validateDelteCartItems()[pri:0, instance:Daraz.DeleteCartItemsTest@12c9a9c]" name="validateDelteCartItems" duration-ms="45870" started-at="2020-02-10T15:33:24Z" finished-at="2020-02-10T15:34:10Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateDelteCartItems -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:Daraz.DeleteCartItemsTest@12c9a9c]" name="tearDown" is-config="true" duration-ms="1538" started-at="2020-02-10T15:34:10Z" finished-at="2020-02-10T15:34:12Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- Daraz.DeleteCartItemsTest -->
-    </test> <!-- Delete From Cart Test -->
-    <test name="Add To Cart Test" duration-ms="109534" started-at="2020-02-10T09:47:33Z" finished-at="2020-02-10T09:49:23Z">
+    <test name="Add To Cart Test" duration-ms="72270" started-at="2020-02-10T11:48:45Z" finished-at="2020-02-10T11:49:57Z">
       <class name="Daraz.AddToCartTest">
-        <test-method status="PASS" signature="initialize()[pri:0, instance:Daraz.AddToCartTest@1e98b1c]" name="initialize" is-config="true" duration-ms="50341" started-at="2020-02-10T15:32:33Z" finished-at="2020-02-10T15:33:24Z">
+        <test-method status="PASS" signature="initialize()[pri:0, instance:Daraz.AddToCartTest@1e98b1c]" name="initialize" is-config="true" duration-ms="37304" started-at="2020-02-10T17:33:45Z" finished-at="2020-02-10T17:34:22Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialize -->
-        <test-method status="FAIL" signature="addToCart()[pri:0, instance:Daraz.AddToCartTest@1e98b1c]" name="addToCart" duration-ms="57929" started-at="2020-02-10T15:33:24Z" finished-at="2020-02-10T15:34:22Z">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//span[@class='ant-modal-close-x']"}
-  (Session info: chrome=80.0.3987.87)
-  (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 5.06 seconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
-System info: host: 'MRIGESHSINGH', ip: '10.139.20.39', os.name: 'Windows 10', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_144'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73), userDataDir=C:\Users\i20345\AppData\Local\Temp\scoped_dir7880_14571}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=80.0.3987.87, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=false, acceptInsecureCerts=false, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
-Session ID: ff30040c502387cd4ee95b7fa9b8b84e
-*** Element info: {Using=xpath, value=//span[@class='ant-modal-close-x']}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//span[@class='ant-modal-close-x']"}
-  (Session info: chrome=80.0.3987.87)
-  (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 5.06 seconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
-System info: host: 'MRIGESHSINGH', ip: '10.139.20.39', os.name: 'Windows 10', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_144'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73), userDataDir=C:\Users\i20345\AppData\Local\Temp\scoped_dir7880_14571}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=80.0.3987.87, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=false, acceptInsecureCerts=false, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
-Session ID: ff30040c502387cd4ee95b7fa9b8b84e
-*** Element info: {Using=xpath, value=//span[@class='ant-modal-close-x']}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:671)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:410)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:509)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:402)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy22.click(Unknown Source)
-	at Daraz.AddToCartTest.addToCart(AddToCartTest.java:64)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:659)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:845)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1153)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
-	at org.testng.TestRunner.privateRun(TestRunner.java:771)
-	at org.testng.TestRunner.run(TestRunner.java:621)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
-	at org.testng.SuiteRunner.access$000(SuiteRunner.java:38)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:391)
-	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:748)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+        <test-method status="PASS" signature="addToCart()[pri:0, instance:Daraz.AddToCartTest@1e98b1c]" name="addToCart" duration-ms="32643" started-at="2020-02-10T17:34:22Z" finished-at="2020-02-10T17:34:55Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addToCart -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:Daraz.AddToCartTest@1e98b1c]" name="teardown" is-config="true" duration-ms="217" started-at="2020-02-10T15:34:23Z" finished-at="2020-02-10T15:34:23Z">
+        <test-method status="PASS" signature="teardown()[pri:0, instance:Daraz.AddToCartTest@1e98b1c]" name="teardown" is-config="true" duration-ms="2316" started-at="2020-02-10T17:34:55Z" finished-at="2020-02-10T17:34:57Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- Daraz.AddToCartTest -->
     </test> <!-- Add To Cart Test -->
+    <test name="Delete From Cart Test" duration-ms="93326" started-at="2020-02-10T11:48:45Z" finished-at="2020-02-10T11:50:19Z">
+      <class name="Daraz.DeleteCartItemsTest">
+        <test-method status="PASS" signature="initializeBrower()[pri:0, instance:Daraz.DeleteCartItemsTest@12c9a9c]" name="initializeBrower" is-config="true" duration-ms="39855" started-at="2020-02-10T17:33:45Z" finished-at="2020-02-10T17:34:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeBrower -->
+        <test-method status="PASS" signature="validateDelteCartItems()[pri:0, instance:Daraz.DeleteCartItemsTest@12c9a9c]" name="validateDelteCartItems" duration-ms="51958" started-at="2020-02-10T17:34:25Z" finished-at="2020-02-10T17:35:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateDelteCartItems -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:Daraz.DeleteCartItemsTest@12c9a9c]" name="tearDown" is-config="true" duration-ms="1508" started-at="2020-02-10T17:35:17Z" finished-at="2020-02-10T17:35:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- Daraz.DeleteCartItemsTest -->
+    </test> <!-- Delete From Cart Test -->
   </suite> <!-- Suite -->
 </testng-results>

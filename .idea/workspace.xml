@@ -5,7 +5,11 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/debug.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/prints.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/prints.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Daraz/pageObjects/CartPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Daraz/pageObjects/CartPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Daraz/AddToCartTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Daraz/AddToCartTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Daraz/DeleteCartItemsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Daraz/DeleteCartItemsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/screenshots/addToCartscreenshot.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/screenshots/validateDelteCartItemsscreenshot.png" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -32,8 +36,8 @@
       <file leaf-file-name="prints.log" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/logs/prints.log">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="229">
-              <caret line="20" column="29" selection-start-line="20" selection-start-column="29" selection-end-line="20" selection-end-column="29" />
+            <state relative-caret-position="237">
+              <caret line="29" column="52" selection-start-line="29" selection-start-column="52" selection-end-line="29" selection-end-column="52" />
             </state>
           </provider>
         </entry>
@@ -50,11 +54,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AddToCartTest.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="AddToCartTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/Daraz/AddToCartTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="446">
-              <caret line="64" column="58" selection-start-line="64" selection-start-column="58" selection-end-line="64" selection-end-column="58" />
+            <state relative-caret-position="357">
+              <caret line="66" column="31" selection-start-line="66" selection-start-column="31" selection-end-line="66" selection-end-column="31" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -65,10 +69,12 @@
       <file leaf-file-name="SearchPage.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Daraz/pageObjects/SearchPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="313">
-              <caret line="35" column="111" selection-start-line="35" selection-start-column="25" selection-end-line="35" selection-end-column="111" />
+            <state relative-caret-position="217">
+              <caret line="32" column="22" selection-start-line="32" selection-start-column="22" selection-end-line="32" selection-end-column="22" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#798#799#0" expanded="true" />
+                <element signature="e#834#835#0" expanded="true" />
                 <element signature="e#1183#1184#0" expanded="true" />
                 <element signature="e#1219#1220#0" expanded="true" />
               </folding>
@@ -76,13 +82,29 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DeleteCartItemsTest.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="DeleteCartItemsTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/Daraz/DeleteCartItemsTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="27" column="25" selection-start-line="27" selection-start-column="17" selection-end-line="27" selection-end-column="33" />
+            <state relative-caret-position="413">
+              <caret line="52" column="77" selection-start-line="52" selection-start-column="77" selection-end-line="52" selection-end-column="77" />
               <folding>
                 <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CartPage.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Daraz/pageObjects/CartPage.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="434">
+              <caret line="52" column="28" selection-start-line="52" selection-start-column="28" selection-end-line="52" selection-end-column="28" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1017#1018#0" expanded="true" />
+                <element signature="e#1053#1054#0" expanded="true" />
+                <element signature="e#1382#1383#0" expanded="true" />
+                <element signature="e#1416#1417#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -135,8 +157,6 @@
         <option value="$PROJECT_DIR$/src/test/java/Daraz/Login.java" />
         <option value="$PROJECT_DIR$/src/test/java/Daraz/Common/Login.java" />
         <option value="$PROJECT_DIR$/src/test/java/Daraz/LoginPageTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Daraz/pageObjects/CartPage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/Daraz/DeleteCartItemsTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/Daraz/pageObjects/LandingPage.java" />
         <option value="$PROJECT_DIR$/src/main/java/resources/base.java" />
         <option value="$PROJECT_DIR$/src/test/java/Daraz/Common/listeners.java" />
@@ -146,6 +166,8 @@
         <option value="$PROJECT_DIR$/logs/prints.log" />
         <option value="$PROJECT_DIR$/src/main/java/resources/log4j2.xml" />
         <option value="$PROJECT_DIR$/src/test/java/Daraz/AddToCartTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Daraz/pageObjects/CartPage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/Daraz/DeleteCartItemsTest.java" />
       </list>
     </option>
   </component>
@@ -186,65 +208,13 @@
             <path>
               <item name="DarazSelenium" type="b2602c69:ProjectViewProjectNode" />
               <item name="DarazSelenium" type="462c0819:PsiDirectoryNode" />
-              <item name="logs" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DarazSelenium" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DarazSelenium" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DarazSelenium" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DarazSelenium" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DarazSelenium" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DarazSelenium" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DarazSelenium" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DarazSelenium" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DarazSelenium" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DarazSelenium" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DarazSelenium" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DarazSelenium" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DarazSelenium" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DarazSelenium" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="Daraz" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DarazSelenium" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DarazSelenium" type="462c0819:PsiDirectoryNode" />
               <item name="target" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="DarazSelenium" type="b2602c69:ProjectViewProjectNode" />
               <item name="DarazSelenium" type="462c0819:PsiDirectoryNode" />
               <item name="target" type="462c0819:PsiDirectoryNode" />
-              <item name="screenshots" type="462c0819:PsiDirectoryNode" />
+              <item name="surefire-reports" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -278,7 +248,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.AddToCartTest.addToCart">
+  <component name="RunManager" selected="TestNG.DeleteCartItemsTest.validateDelteCartItems">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
@@ -468,8 +438,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.AddToCartTest.addToCart" />
         <item itemvalue="TestNG.DeleteCartItemsTest.validateDelteCartItems" />
+        <item itemvalue="TestNG.AddToCartTest.addToCart" />
         <item itemvalue="TestNG.LandingPageTest.validateSearchBarIsDisplayed" />
         <item itemvalue="TestNG.C:/Users/i20345/IdeaProjects/E2EProject/testng.xml" />
         <item itemvalue="TestNG.LoginPageTest.validateLogin" />
@@ -490,35 +460,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="LandingPageTest_validateSearchBarIsDisplayed - 2020.02.07 at 16h 33m 49s.xml">
-      <configuration name="LandingPageTest.validateSearchBarIsDisplayed" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="LandingPageTest_validateSearchBarIsDisplayed - 2020.02.07 at 16h 36m 10s.xml">
-      <configuration name="LandingPageTest.validateSearchBarIsDisplayed" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="LandingPageTest_validateSearchBarIsDisplayed - 2020.02.07 at 16h 39m 46s.xml">
-      <configuration name="LandingPageTest.validateSearchBarIsDisplayed" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="LandingPageTest_validateSearchBarIsDisplayed - 2020.02.07 at 16h 50m 47s.xml">
-      <configuration name="LandingPageTest.validateSearchBarIsDisplayed" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="AddToCartTest_addToCart - 2020.02.07 at 17h 31m 54s.xml">
+    <history-entry file="AddToCartTest_addToCart - 2020.02.10 at 16h 57m 28s.xml">
       <configuration name="AddToCartTest.addToCart" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="DeleteCartItemsTest_validateDelteCartItems - 2020.02.10 at 10h 13m 08s.xml">
+    <history-entry file="AddToCartTest_addToCart - 2020.02.10 at 16h 58m 23s.xml">
+      <configuration name="AddToCartTest.addToCart" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="AddToCartTest_addToCart - 2020.02.10 at 17h 06m 49s.xml">
+      <configuration name="AddToCartTest.addToCart" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="AddToCartTest_addToCart - 2020.02.10 at 17h 08m 14s.xml">
+      <configuration name="AddToCartTest.addToCart" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="AddToCartTest_addToCart - 2020.02.10 at 17h 09m 46s.xml">
+      <configuration name="AddToCartTest.addToCart" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="AddToCartTest_addToCart - 2020.02.10 at 17h 12m 15s.xml">
+      <configuration name="AddToCartTest.addToCart" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="AddToCartTest_addToCart - 2020.02.10 at 17h 13m 40s.xml">
+      <configuration name="AddToCartTest.addToCart" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="AddToCartTest_addToCart - 2020.02.10 at 17h 15m 43s.xml">
+      <configuration name="AddToCartTest.addToCart" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="AddToCartTest_addToCart - 2020.02.10 at 17h 19m 08s.xml">
+      <configuration name="AddToCartTest.addToCart" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="DeleteCartItemsTest_validateDelteCartItems - 2020.02.10 at 17h 38m 04s.xml">
       <configuration name="DeleteCartItemsTest.validateDelteCartItems" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="AddToCartTest_addToCart - 2020.02.10 at 10h 16m 13s.xml">
-      <configuration name="AddToCartTest.addToCart" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="AddToCartTest_addToCart - 2020.02.10 at 10h 17m 14s.xml">
-      <configuration name="AddToCartTest.addToCart" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="AddToCartTest_addToCart - 2020.02.10 at 15h 36m 07s.xml">
-      <configuration name="AddToCartTest.addToCart" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="AddToCartTest_addToCart - 2020.02.10 at 15h 41m 04s.xml">
-      <configuration name="AddToCartTest.addToCart" configurationId="TestNG" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -534,7 +504,7 @@
       <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="3" visible="true" weight="0.20255864" />
       <window_info anchor="bottom" id="Version Control" order="2" />
-      <window_info active="true" anchor="bottom" id="Run" order="6" visible="true" weight="0.42532468" />
+      <window_info active="true" anchor="bottom" id="Run" order="6" visible="true" weight="0.31385282" />
       <window_info anchor="bottom" id="Terminal" order="0" weight="0.30194804" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="0" />
@@ -544,7 +514,7 @@
       <window_info id="UI Designer" order="1" />
       <window_info anchor="right" id="Theme Preview" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
-      <window_info anchor="bottom" id="Debug" order="7" weight="0.6504329" />
+      <window_info anchor="bottom" id="Debug" order="7" weight="0.51082253" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="7" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="5" type="SLIDING" weight="0.4" />
@@ -558,8 +528,13 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="16" />
+      <option name="time" value="19" />
     </breakpoint-manager>
+    <watches-manager>
+      <configuration name="TestNG">
+        <watch expression="addToCartBtn" />
+      </configuration>
+    </watches-manager>
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="evaluateExpression">
@@ -668,6 +643,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="133">
           <caret line="19" selection-start-line="19" selection-end-line="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -734,24 +712,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/logs/prints-2020-02-05.log" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/Daraz/pageObjects/CartPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="489">
-          <caret line="45" column="30" selection-start-line="45" selection-start-column="30" selection-end-line="45" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#536#537#0" expanded="true" />
-            <element signature="e#580#581#0" expanded="true" />
-            <element signature="e#729#730#0" expanded="true" />
-            <element signature="e#773#774#0" expanded="true" />
-            <element signature="e#1102#1103#0" expanded="true" />
-            <element signature="e#1142#1143#0" expanded="true" />
-            <element signature="e#1192#1193#0" expanded="true" />
-            <element signature="e#1232#1233#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-464">
@@ -800,16 +760,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/logs/prints-2020-02-07.log" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/Daraz/pageObjects/LandingPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="83">
-          <caret line="15" column="47" selection-start-line="15" selection-start-column="47" selection-end-line="15" selection-end-column="47" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/resources/log4j2.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
@@ -817,21 +767,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/target/screenshots/validateDelteCartItemsscreenshot.png">
+    <entry file="file://$PROJECT_DIR$/target/screenshots/addToCartscreenshot.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Daraz/LandingPageTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/resources/data.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="33" column="44" selection-start-line="33" selection-start-column="44" selection-end-line="33" selection-end-column="44" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="17">
+          <caret line="1" column="7" selection-start-line="1" selection-start-column="7" selection-end-line="1" selection-end-column="7" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/target/screenshots/addToCartscreenshot.png">
-      <provider selected="true" editor-type-id="images" />
+    <entry file="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-api/3.4.0/selenium-api-3.4.0-sources.jar!/org/openqa/selenium/WebElement.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="167">
+          <caret line="49" column="7" selection-start-line="49" selection-start-column="7" selection-end-line="49" selection-end-column="7" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Daraz/LoginPageTest.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -843,53 +794,78 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/resources/data.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="7" selection-start-line="1" selection-start-column="7" selection-end-line="1" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/logs/prints.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="229">
-          <caret line="20" column="29" selection-start-line="20" selection-start-column="29" selection-end-line="20" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Daraz/DeleteCartItemsTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="27" column="25" selection-start-line="27" selection-start-column="17" selection-end-line="27" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-api/3.4.0/selenium-api-3.4.0-sources.jar!/org/openqa/selenium/WebElement.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="167">
-          <caret line="49" column="7" selection-start-line="49" selection-start-column="7" selection-end-line="49" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Daraz/pageObjects/SearchPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="313">
-          <caret line="35" column="111" selection-start-line="35" selection-start-column="25" selection-end-line="35" selection-end-column="111" />
+        <state relative-caret-position="217">
+          <caret line="32" column="22" selection-start-line="32" selection-start-column="22" selection-end-line="32" selection-end-column="22" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#798#799#0" expanded="true" />
+            <element signature="e#834#835#0" expanded="true" />
             <element signature="e#1183#1184#0" expanded="true" />
             <element signature="e#1219#1220#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Daraz/LandingPageTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="33" column="44" selection-start-line="33" selection-start-column="44" selection-end-line="33" selection-end-column="44" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/logs/prints.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="237">
+          <caret line="29" column="52" selection-start-line="29" selection-start-column="52" selection-end-line="29" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Daraz/pageObjects/LandingPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="83">
+          <caret line="15" column="47" selection-start-line="15" selection-start-column="47" selection-end-line="15" selection-end-column="47" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/screenshots/validateDelteCartItemsscreenshot.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Daraz/AddToCartTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="446">
-          <caret line="64" column="58" selection-start-line="64" selection-start-column="58" selection-end-line="64" selection-end-column="58" />
+        <state relative-caret-position="357">
+          <caret line="66" column="31" selection-start-line="66" selection-start-column="31" selection-end-line="66" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Daraz/pageObjects/CartPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="434">
+          <caret line="52" column="28" selection-start-line="52" selection-start-column="28" selection-end-line="52" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1017#1018#0" expanded="true" />
+            <element signature="e#1053#1054#0" expanded="true" />
+            <element signature="e#1382#1383#0" expanded="true" />
+            <element signature="e#1416#1417#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Daraz/DeleteCartItemsTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="413">
+          <caret line="52" column="77" selection-start-line="52" selection-start-column="77" selection-end-line="52" selection-end-column="77" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

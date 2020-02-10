@@ -5,7 +5,7 @@
     <listener class-name="Daraz.Common.listeners"/>
     <listener class-name="resources.ExtentReporterNG"/>
   </listeners>
-  <test name="Add To Cart Test(failed)" parallel="tests">
+  <test name="Delete From Cart Test(failed)" parallel="tests">
     <classes>
       <class name="Daraz.LoginPageTest">
         <methods>
@@ -21,7 +21,6 @@
       </class> <!-- Daraz.LandingPageTest -->
       <class name="Daraz.AddToCartTest">
         <methods>
-          <include name="addToCart"/>
           <include name="initialize"/>
           <include name="teardown"/>
         </methods>
@@ -29,9 +28,10 @@
       <class name="Daraz.DeleteCartItemsTest">
         <methods>
           <include name="initializeBrower"/>
+          <include name="validateDelteCartItems"/>
           <include name="tearDown"/>
         </methods>
       </class> <!-- Daraz.DeleteCartItemsTest -->
     </classes>
-  </test> <!-- Add To Cart Test(failed) -->
+  </test> <!-- Delete From Cart Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

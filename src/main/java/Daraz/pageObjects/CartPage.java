@@ -24,18 +24,21 @@ public class CartPage {
     @FindBy(xpath = "//div[@class='list-header-left'] //input[@type='checkbox']")
     private WebElement checkBoxSelectAll;
 
-    @FindAll({ @FindBy(xpath = "//div[@class='cart-empty-text']")})
-    private List<WebElement> txtEmptyCart;
+    @FindAll({@FindBy(xpath = "//div[@class='cart-empty-text']")})
+    private List<WebElement> txtEmptyCartSize;
 
     @FindBy(xpath = "//button[@class='ok']")
     private WebElement BtnDeleteCartOk;
+
+    @FindBy(xpath = "//div[@class='cart-empty-text']")
+    private WebElement txtEmptyCart;
 
     public WebElement getCartItemsDeleteBtn() {
         return btnDeleteAllCartItems;
     }
 
-    public List<WebElement> getEmptyCartTxt() {
-        return  txtEmptyCart;
+    public List<WebElement> getTxtEmptyCartSize() {
+        return txtEmptyCartSize;
     }
 
     public WebElement getSelectAllItems() {
@@ -44,5 +47,9 @@ public class CartPage {
 
     public WebElement getCartDeleteOkBtn() {
         return BtnDeleteCartOk;
+    }
+
+    public WebElement getEmptyCartTxt() {
+        return txtEmptyCart;
     }
 }

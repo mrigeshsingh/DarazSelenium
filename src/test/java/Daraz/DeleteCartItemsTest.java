@@ -39,7 +39,7 @@ public class DeleteCartItemsTest extends base {
         login.userLogin();
         landingPage.getCartBtn().click();
 
-        if(cartPage.getEmptyCartTxt().size()== 1) {
+        if(cartPage.getTxtEmptyCartSize().size()== 1) {
             log.info("Cart is Empty");
         } else
         {
@@ -50,8 +50,8 @@ public class DeleteCartItemsTest extends base {
             cartPage.getCartDeleteOkBtn().click();
         }
 
-        wait.until(ExpectedConditions.visibilityOf(cartPage.getEmptyCartTxt().get(0)));
-        Assert.assertTrue(cartPage.getEmptyCartTxt().get(0).getText().equalsIgnoreCase("There are no items in this cart"));
+        wait.until(ExpectedConditions.visibilityOf(cartPage.getEmptyCartTxt()));
+        Assert.assertTrue(cartPage.getEmptyCartTxt().getText().equalsIgnoreCase("There are no items in this cart"));
 
     }
 
