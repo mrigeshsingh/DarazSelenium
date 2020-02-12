@@ -6,16 +6,21 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindAll;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedCondition;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.util.List;
 
 public class SearchPage {
     public WebDriver driver;
+    WebDriverWait wait;
 
     public SearchPage(WebDriver driver) {
         // TODO Auto-generated constructor stub
         this.driver = driver;
         PageFactory.initElements(driver, this);
+        wait = new WebDriverWait(driver, 10);
     }
 
 
@@ -35,6 +40,19 @@ public class SearchPage {
     {
         return txtError;
     }
+
+    public void waitUntilAddToCartBtnIsVisible(WebElement element)
+    {
+        wait.until(ExpectedConditions.visibilityOf(element));
+    }
+
+    public void waitUntilCartPopUpIsDisplayed()
+    {
+        wait.until(ExpectedConditions.or(ExpectedConditions.visibilityOf(getCheckOutBtn()),ExpectedConditions.visibilityOf(getErrorTxt())));
+    }
+
+
+
 
     public List<WebElement> getSearchItems() {
         return searchedItems;

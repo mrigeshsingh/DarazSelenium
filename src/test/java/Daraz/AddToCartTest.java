@@ -59,10 +59,10 @@ public class AddToCartTest extends base {
             WebElement addToCartBtn = searchPage.getAddToCartBtn(k);
 
             actions.moveToElement(parent).build().perform();
-            wait.until(ExpectedConditions.visibilityOf(addToCartBtn));
+            searchPage.waitUntilAddToCartBtnIsVisible(addToCartBtn);
             addToCartBtn.click();
 
-            wait.until(ExpectedConditions.or(ExpectedConditions.visibilityOf(searchPage.getCheckOutBtn()),ExpectedConditions.visibilityOf(searchPage.getErrorTxt())));
+            searchPage.waitUntilCartPopUpIsDisplayed();
             searchPage.getPopUpClose().click();
 
             count++;
@@ -72,6 +72,7 @@ public class AddToCartTest extends base {
         }
 
         Thread.sleep(2000);
+        //searchPage.waitUntilCartPopUpIsClosed();
 
         landingPage.getCartBtn().click();
         Assert.assertTrue(cartPage.getCartItemsCount()>0);
