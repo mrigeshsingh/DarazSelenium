@@ -72,8 +72,7 @@ public class AddToCartTest extends base {
         }
 
         Thread.sleep(2000);
-        //searchPage.waitUntilCartPopUpIsClosed();
-
+        
         landingPage.getCartBtn().click();
         Assert.assertTrue(cartPage.getCartItemsCount()>0);
     }
