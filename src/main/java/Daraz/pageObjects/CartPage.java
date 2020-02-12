@@ -33,6 +33,9 @@ public class CartPage {
     @FindBy(xpath = "//div[@class='cart-empty-text']")
     private WebElement txtEmptyCart;
 
+    @FindAll({ @FindBy(xpath = "//div[@class='cart-item-inner']")})
+    private List<WebElement> countCartItems;
+
     public WebElement getCartItemsDeleteBtn() {
         return btnDeleteAllCartItems;
     }
@@ -51,5 +54,10 @@ public class CartPage {
 
     public WebElement getEmptyCartTxt() {
         return txtEmptyCart;
+    }
+
+    public int getCartItemsCount()
+    {
+        return countCartItems.size();
     }
 }

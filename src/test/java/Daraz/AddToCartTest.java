@@ -58,8 +58,6 @@ public class AddToCartTest extends base {
             WebElement parent = searchPage.getSearchItems().get(k);
             WebElement addToCartBtn = searchPage.getAddToCartBtn(k);
 
-
-
             actions.moveToElement(parent).build().perform();
             wait.until(ExpectedConditions.visibilityOf(addToCartBtn));
             addToCartBtn.click();

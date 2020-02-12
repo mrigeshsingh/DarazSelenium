@@ -25,6 +25,16 @@ public class SearchPage {
     @FindBy(xpath = "//span[@class='ant-modal-close-x']")
     private WebElement btnPopUpClose;
 
+    @FindBy(xpath = "//a[contains(text(),'CHECKOUT')]")
+    private  WebElement btnCheckOut;
+
+    @FindBy(xpath = "//span[@class='ant-alert-message']")
+    private WebElement txtError;
+
+    public  WebElement getErrorTxt()
+    {
+        return txtError;
+    }
 
     public List<WebElement> getSearchItems() {
         return searchedItems;
@@ -38,8 +48,15 @@ public class SearchPage {
         return btnAddToCart;
     }
 
+
+
     public WebElement getPopUpClose()
     {
         return btnPopUpClose;
+    }
+
+    public WebElement getCheckOutBtn()
+    {
+        return btnCheckOut;
     }
 }

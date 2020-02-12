@@ -36,17 +36,19 @@ public class LandingPage {
         return divNavigationBar;
     }
 
-    public  WebElement getSearchBar()
-    {
-        return  txtSearchBar;
+    public WebElement getSearchBar() {
+        return txtSearchBar;
     }
 
-    public  WebElement getLoginBtn() {return btnLogin;}
+    public WebElement getLoginBtn() {
+        return btnLogin;
+    }
 
-    public WebElement getBtnAfterLogin(){return btnAfterLogin;}
+    public WebElement getBtnAfterLogin() {
+        return btnAfterLogin;
+    }
 
-    public WebElement getCartBtn()
-    {
+    public WebElement getCartBtn() {
         return btnCart;
     }
 
