@@ -3,6 +3,7 @@ package Daraz;
 import java.io.IOException;
 
 import Daraz.Common.Login;
+import Daraz.pageObjects.CartPage;
 import Daraz.pageObjects.LandingPage;
 import Daraz.pageObjects.SearchPage;
 import org.apache.logging.log4j.LogManager;
@@ -10,8 +11,10 @@ import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
 import org.testng.annotations.*;
 import org.openqa.selenium.JavascriptExecutor;
 
@@ -28,6 +31,7 @@ public class AddToCartTest extends base {
     WebDriverWait wait;
     JavascriptExecutor executor;
     Login login;
+    CartPage cartPage;
 
     @BeforeClass
     public void initialize() throws IOException {
@@ -37,9 +41,8 @@ public class AddToCartTest extends base {
         searchPage=new SearchPage(driver);
         actions=new Actions(driver);
         wait = new WebDriverWait(driver, 10);
-        executor = (JavascriptExecutor)driver;
         login = new Login(driver);
-
+        cartPage = new CartPage(driver);
     }
 
     @Test
@@ -55,16 +58,14 @@ public class AddToCartTest extends base {
             WebElement parent = searchPage.getSearchItems().get(k);
             WebElement addToCartBtn = searchPage.getAddToCartBtn(k);
 
-            executor.executeScript("window.scrollBy(0,100)");
+
 
             actions.moveToElement(parent).build().perform();
-            Thread.sleep(2000);
-
+            wait.until(ExpectedConditions.visibilityOf(addToCartBtn));
             addToCartBtn.click();
-            Thread.sleep(2000);
 
+            wait.until(ExpectedConditions.or(ExpectedConditions.visibilityOf(searchPage.getCheckOutBtn()),ExpectedConditions.visibilityOf(searchPage.getErrorTxt())));
             searchPage.getPopUpClose().click();
-            executor.executeScript("window.scrollBy(0,-100)");
 
             count++;
 
@@ -72,6 +73,10 @@ public class AddToCartTest extends base {
                 break;
         }
 
+        Thread.sleep(2000);
+
+        landingPage.getCartBtn().click();
+        Assert.assertTrue(cartPage.getCartItemsCount()>0);
     }
 
     @AfterClass
