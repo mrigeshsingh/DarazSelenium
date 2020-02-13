@@ -1,25 +1,23 @@
 package Daraz;
 
-import java.io.IOException;
-
 import Daraz.Common.Login;
 import Daraz.pageObjects.CartPage;
 import Daraz.pageObjects.LandingPage;
 import Daraz.pageObjects.SearchPage;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.support.ui.ExpectedCondition;
-import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
-import org.testng.annotations.*;
-import org.openqa.selenium.JavascriptExecutor;
-
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Test;
 import resources.base;
 
+import java.io.IOException;
 
 
 public class AddToCartTest extends base {
@@ -37,9 +35,9 @@ public class AddToCartTest extends base {
     public void initialize() throws IOException {
         driver = initializeDriver();
         driver.get(prop.getProperty("url"));
-        landingPage=new LandingPage(driver);
-        searchPage=new SearchPage(driver);
-        actions=new Actions(driver);
+        landingPage = new LandingPage(driver);
+        searchPage = new SearchPage(driver);
+        actions = new Actions(driver);
         wait = new WebDriverWait(driver, 10);
         login = new Login(driver);
         cartPage = new CartPage(driver);
@@ -53,8 +51,7 @@ public class AddToCartTest extends base {
         landingPage.getSearchBar().sendKeys(Keys.ENTER);
 
         int count = 0;
-        for(int k=0;k<searchPage.getSearchItems().size();k++)
-        {
+        for (int k = 0; k < searchPage.getSearchItems().size(); k++) {
             WebElement parent = searchPage.getSearchItems().get(k);
             WebElement addToCartBtn = searchPage.getAddToCartBtn(k);
 
@@ -64,17 +61,16 @@ public class AddToCartTest extends base {
 
             searchPage.waitUntilCartPopUpIsDisplayed();
             searchPage.getPopUpClose().click();
-
             count++;
 
-            if (count==3)
+            //Add at most three items from the search result
+            if (count == 3)
                 break;
         }
 
-        Thread.sleep(2000);
-        
+        searchPage.waitUntilInvisibilityofAddToCartPopUp();
         landingPage.getCartBtn().click();
-        Assert.assertTrue(cartPage.getCartItemsCount()>0);
+        Assert.assertTrue(cartPage.getCartItemsCount() > 0);
     }
 
     @AfterClass

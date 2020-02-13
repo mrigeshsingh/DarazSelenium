@@ -37,6 +37,9 @@ public class SearchPage {
     @FindBy(xpath = "//span[@class='ant-alert-message']")
     private WebElement txtError;
 
+    @FindBy(xpath = "//div[@class='ant-modal-body']")
+    private WebElement divAddToCartPopUp;
+
     public  WebElement getErrorTxt()
     {
         return txtError;
@@ -50,6 +53,11 @@ public class SearchPage {
     public void waitUntilCartPopUpIsDisplayed()
     {
         wait.until(ExpectedConditions.or(ExpectedConditions.visibilityOf(getCheckOutBtn()),ExpectedConditions.visibilityOf(getErrorTxt())));
+    }
+
+    public void waitUntilInvisibilityofAddToCartPopUp()
+    {
+        wait.until(ExpectedConditions.invisibilityOf(divAddToCartPopUp));
     }
 
 
