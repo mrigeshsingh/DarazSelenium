@@ -7,16 +7,13 @@ import Daraz.pageObjects.LandingPage;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebElement;
-import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import resources.base;
 
 import java.io.IOException;
-import java.util.Iterator;
 import java.util.List;
-import java.util.Set;
 
 public class OpenAllCategoryPagesTest extends base {
     public static Logger log = LogManager.getLogger(base.class.getName());
@@ -49,20 +46,6 @@ public class OpenAllCategoryPagesTest extends base {
 
         windowHandles.openNextWindow();
 
-//        String mainWindow = driver.getWindowHandle();
-//        // It returns no. of windows opened by WebDriver and will return Set of Strings
-//        Set<String> set = driver.getWindowHandles();
-//        // Using Iterator to iterate with in windows
-//        Iterator<String> itr = set.iterator();
-//        while (itr.hasNext()) {
-//            String childWindow = itr.next();
-//            // Compare whether the main windows is not equal to child window. If not equal, we will close.
-//            if (!mainWindow.equals(childWindow)) {
-//                driver.switchTo().window(childWindow);
-//                log.info(driver.switchTo().window(childWindow).getTitle()+" page loaded");
-//                Assert.assertTrue(categoryPage.waitUntilPageLoad());
-//            }
-//        }
     }
 
     @AfterClass
