@@ -69,4 +69,8 @@ public class SearchPage {
         wait.until(ExpectedConditions.or(ExpectedConditions.visibilityOf(getCheckOutBtn()), ExpectedConditions.visibilityOf(getErrorTxt())));
     }
 
+    public void waitUntilCartPopUpIsInvisible() {
+        wait.until(ExpectedConditions.or(ExpectedConditions.invisibilityOf(getCheckOutBtn()), ExpectedConditions.invisibilityOf(getErrorTxt())));
+    }
+
 }

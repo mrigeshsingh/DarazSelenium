@@ -36,7 +36,7 @@ public class DeleteCartItemsTest extends base {
     }
 
 
-    @Test
+    @Test (dependsOnGroups = "RunFirstAddToCart")
     public void validateDelteCartItems() {
         login.userLogin();
         landingPage.getCartBtn().click();

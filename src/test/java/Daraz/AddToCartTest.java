@@ -41,7 +41,7 @@ public class AddToCartTest extends base {
         landingPage = new LandingPage(driver);
     }
 
-    @Test
+    @Test (groups="RunFirstAddToCart")
     public void addToCart() {
         login.userLogin();
 
@@ -66,9 +66,9 @@ public class AddToCartTest extends base {
                 break;
         }
 
-        wait.waitUntilTheInvisibilityOfElement(searchPage.getDivAddToCartPopUp());
-        landingPage.getCartBtn().click();
-        Assert.assertTrue(cartPage.getCartItemsCount() > 0);
+        int cartCount = Integer.parseInt(cartPage.getCartBtnCount().getText());
+        Assert.assertTrue(cartCount>0);
+
     }
 
     @AfterClass

@@ -1,5 +1,6 @@
 package Daraz.Common;
 
+import Daraz.pageObjects.CategoryPage;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -8,11 +9,13 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 public class Waits {
     public WebDriver driver;
     WebDriverWait wait;
+    CategoryPage categoryPage;
 
     public  Waits(WebDriver driver)
     {
         this.driver = driver;
         wait = new WebDriverWait(driver,10);
+        categoryPage = new CategoryPage(driver);
     }
 
     public  void waitUntilTheVisibilityOfElement(WebElement element)
@@ -20,8 +23,14 @@ public class Waits {
         wait.until(ExpectedConditions.visibilityOf(element));
     }
 
-    public void waitUntilTheInvisibilityOfElement(WebElement element)
+    public boolean waitUntilSubCategoryPageLoad()
     {
-        wait.until(ExpectedConditions.invisibilityOf(element));
+        wait.until(ExpectedConditions.visibilityOf(categoryPage.getDivLeftFilterColumn()));
+        wait.until(ExpectedConditions.visibilityOf(categoryPage.getDivSorting()));
+        wait.until(ExpectedConditions.visibilityOf(categoryPage.getDivAllItems()));
+        wait.until(ExpectedConditions.visibilityOf(categoryPage.getDivPagination()));
+
+        return true;
     }
+
 }

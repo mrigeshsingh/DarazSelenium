@@ -1,5 +1,6 @@
 package Daraz;
 
+import Daraz.Common.Login;
 import Daraz.Common.Waits;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -19,6 +20,7 @@ public class LoginPageTest extends base{
     LandingPage landingPage;
     LoginPage loginPage;
     Waits wait;
+    Login login;
 
     @BeforeClass
     public void initialize() throws IOException {
@@ -26,17 +28,13 @@ public class LoginPageTest extends base{
         driver.get(prop.getProperty("url"));
         landingPage = new LandingPage(driver);
         loginPage = new LoginPage(driver);
+        login = new Login(driver);
         wait = new Waits(driver);
     }
 
     @Test
     public void validateLogin() {
-        landingPage.getLoginBtn().click();
-        loginPage.getUsername().sendKeys(prop.getProperty("username"));
-        loginPage.getPassword().sendKeys(prop.getProperty("password"));
-        loginPage.getLogin().click();
-        wait.waitUntilTheVisibilityOfElement(landingPage.getBtnAfterLogin());
-
+        login.userLogin();
         Assert.assertTrue(landingPage.getBtnAfterLogin().getText().contains("ACCOUNT"));
     }
 

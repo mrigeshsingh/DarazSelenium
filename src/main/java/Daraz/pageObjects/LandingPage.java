@@ -6,7 +6,6 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindAll;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.util.List;
 
@@ -42,6 +41,9 @@ public class LandingPage {
     @FindAll({@FindBy(xpath = "//ul[@class='lzd-site-menu-root']/li")})
     private List<WebElement> btnSubCategories;
 
+    @FindBy(xpath = "//a[@class='button J_LoadMoreButton']")
+    private WebElement btnLoadMore;
+
 
     public WebElement getNavigationBar() {
         return divNavigationBar;
@@ -63,20 +65,19 @@ public class LandingPage {
         return btnCart;
     }
 
-    public List<WebElement> getAllCategories()
-    {
+    public List<WebElement> getAllCategories() {
         return btnCategories;
     }
 
-    public List<WebElement> getSubcategories(int position)
-    {
-        String subCategory = "//ul[@class='lzd-site-menu-sub Level_1_Category_No"+position+" lzd-site-menu-sub-active']/li";
-        System.out.println(subCategory);
+    public List<WebElement> getSubcategories(int position) {
+        String subCategory = "//ul[@class='lzd-site-menu-sub Level_1_Category_No" + position + " lzd-site-menu-sub-active']/li";
         return driver.findElements(By.xpath(subCategory));
     }
 
-
-
+    public WebElement getBtnLoadMore()
+    {
+        return btnLoadMore;
+    }
 }
 	
 	

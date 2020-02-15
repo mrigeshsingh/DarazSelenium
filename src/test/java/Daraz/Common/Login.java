@@ -3,10 +3,8 @@ package Daraz.Common;
 import Daraz.pageObjects.LandingPage;
 import Daraz.pageObjects.LoginPage;
 import org.openqa.selenium.WebDriver;
-import org.testng.Assert;
 import resources.base;
 
-import java.io.IOException;
 
 public class Login extends base {
 
@@ -15,7 +13,7 @@ public class Login extends base {
     public WebDriver driver;
     Waits wait;
 
-    public Login(WebDriver driver) throws IOException {
+    public Login(WebDriver driver) {
         this.driver = driver;
         landingPage = new LandingPage(driver);
         loginPage = new LoginPage(driver);
@@ -27,7 +25,6 @@ public class Login extends base {
         loginPage.getUsername().sendKeys("9841558034");
         loginPage.getPassword().sendKeys("maestro@222");
         loginPage.getLogin().click();
-        wait.waitUntilTheVisibilityOfElement(landingPage.getBtnAfterLogin());
-        Assert.assertTrue(landingPage.getBtnAfterLogin().getText().contains("ACCOUNT"));
+        wait.waitUntilTheVisibilityOfElement(landingPage.getNavigationBar());
     }
 }

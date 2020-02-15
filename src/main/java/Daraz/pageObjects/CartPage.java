@@ -46,6 +46,9 @@ public class CartPage {
     @FindBy(xpath = "//button[@class='ok']")
     private WebElement btnDeleteConfirmationPopUp;
 
+    @FindBy(xpath = "//span[@id='topActionCartNumber']")
+    private WebElement txtCartCount;
+
     public WebElement getCartItemsDeleteBtn() {
         return btnDeleteAllCartItems;
     }
@@ -76,6 +79,11 @@ public class CartPage {
 
     public WebElement getBtnDeleteConfirmationPopUp() {
         return btnDeleteConfirmationPopUp;
+    }
+
+    public WebElement getCartBtnCount()
+    {
+        return txtCartCount;
     }
 
 

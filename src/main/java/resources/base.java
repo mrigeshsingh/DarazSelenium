@@ -2,22 +2,20 @@ package resources;
 
 import java.io.File;
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Properties;
+import java.util.Random;
 import java.util.concurrent.TimeUnit;
 
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.interactions.Actions;
 
 
 public class base {
 
     public WebDriver driver;
     public Properties prop;
-    Actions actions;
 
     public WebDriver initializeDriver() throws IOException {
         prop = new Properties();
@@ -57,17 +55,5 @@ public class base {
         File src = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
         FileUtils.copyFile(src, new File("target\\screenshots\\" + result + "screenshot.png"));
     }
-
-//    public void hoverOver(WebElement elementCategory)
-//    {
-//        actions = new Actions(driver);
-//        actions.moveToElement(elementCategory).build().perform();
-//    }
-//
-//    public void hoverOverAndOpenSubCategoryInNewTab(WebElement elementSubCategory)
-//    {
-//        actions = new Actions(driver);
-//        actions.keyDown(Keys.CONTROL).click(elementSubCategory).keyUp(Keys.CONTROL).build().perform();
-//    }
 
 }

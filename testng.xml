@@ -1,37 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Suite" parallel="tests">
+<suite name="Suite" parallel="classes">
     <listeners>
         <listener class-name="Daraz.Common.Listeners"/>
         <listener class-name="resources.ExtentReporterNG"/>
     </listeners>
 
-    <!--    <test name="Landing Page Test">-->
-    <!--        <classes>-->
-    <!--            <class name="Daraz.LandingPageTest"/>-->
-    <!--        </classes>-->
-    <!--    </test>-->
-
-    <!--    <test name="Login Page Test">-->
-    <!--        <classes>-->
-    <!--            <class name="Daraz.LoginPageTest"/>-->
-    <!--        </classes>-->
-    <!--    </test>-->
-    <!--    <test name="Add To Cart Test">-->
-    <!--        <classes>-->
-    <!--            <class name="Daraz.AddToCartTest"/>-->
-    <!--        </classes>-->
-    <!--    </test>-->
-    <!--    <test name="Delete From Cart Test">-->
-    <!--        <classes>-->
-    <!--            <class name="Daraz.DeleteCartItemsTest"/>-->
-    <!--        </classes>-->
-    <!--    </test>-->
-    <test name="Open All Categories Test">
+    <test name="Landing Page Test">
         <classes>
+            <class name="Daraz.AddToCartTest"/>
+            <class name="Daraz.LandingPageTest"/>
+            <class name="Daraz.LoginPageTest"/>
+            <class name="Daraz.DeleteCartItemsTest"/>
             <class name="Daraz.OpenAllCategoryPagesTest"/>
         </classes>
     </test>
-
-
 </suite>
