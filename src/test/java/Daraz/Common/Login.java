@@ -13,13 +13,13 @@ public class Login extends base {
     LandingPage landingPage;
     LoginPage loginPage;
     public WebDriver driver;
-    Wait wait;
+    Waits wait;
 
     public Login(WebDriver driver) throws IOException {
         this.driver = driver;
         landingPage = new LandingPage(driver);
         loginPage = new LoginPage(driver);
-        wait = new Wait(driver);
+        wait = new Waits(driver);
     }
 
     public void userLogin() {
