@@ -38,10 +38,11 @@ public class AddToCartTest extends base {
         cartPage = new CartPage(driver);
         hover = new Hover(driver);
         wait = new Waits(driver);
+        landingPage = new LandingPage(driver);
     }
 
     @Test
-    public void addToCart() throws InterruptedException {
+    public void addToCart() {
         login.userLogin();
 
         landingPage.getSearchBar().sendKeys(prop.getProperty("searchItem"));
