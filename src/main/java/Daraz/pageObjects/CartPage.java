@@ -1,7 +1,5 @@
 package Daraz.pageObjects;
 
-
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindAll;
@@ -68,21 +66,17 @@ public class CartPage {
         return txtEmptyCart;
     }
 
+    public WebElement getDivShippingFee() {
+        return divShippingFee;
+    }
+
     public int getCartItemsCount() {
         return countCartItems.size();
     }
 
-    public void waitUntilAllItemsAreSelected() {
-        wait.until(ExpectedConditions.visibilityOf(divShippingFee));
+    public WebElement getBtnDeleteConfirmationPopUp() {
+        return btnDeleteConfirmationPopUp;
     }
 
-    public void waitUntilDeleteConfirmationPopUpIsVisible()
-    {
-        wait.until(ExpectedConditions.visibilityOf(btnDeleteConfirmationPopUp));
-    }
 
-    public void waitUntilDeleteConfirmationMsgIsDisplayed()
-    {
-        wait.until(ExpectedConditions.visibilityOf(getEmptyCartTxt()));
-    }
 }

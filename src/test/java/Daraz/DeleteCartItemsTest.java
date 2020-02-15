@@ -1,6 +1,7 @@
 package Daraz;
 
 import Daraz.Common.Login;
+import Daraz.Common.Waits;
 import Daraz.pageObjects.CartPage;
 import Daraz.pageObjects.LandingPage;
 import org.apache.logging.log4j.LogManager;
@@ -22,7 +23,7 @@ public class DeleteCartItemsTest extends base {
     Login login;
     LandingPage landingPage;
     CartPage cartPage;
-    WebDriverWait wait;
+    Waits wait;
 
     @BeforeClass
     public void initializeBrower() throws IOException {
@@ -31,37 +32,34 @@ public class DeleteCartItemsTest extends base {
         login = new Login(driver);
         landingPage = new LandingPage(driver);
         cartPage = new CartPage(driver);
-        wait = new WebDriverWait(driver,10);
+        wait = new Waits(driver);
     }
 
 
     @Test
-    public void validateDelteCartItems() throws InterruptedException {
+    public void validateDelteCartItems() {
         login.userLogin();
         landingPage.getCartBtn().click();
 
-        if(cartPage.getTxtEmptyCartSize().size()== 1) {
+        if (cartPage.getTxtEmptyCartSize().size() == 1) {
             log.info("Cart is Empty");
-        } else
-        {
+        } else {
             cartPage.getSelectAllItems().click();
-            cartPage.waitUntilAllItemsAreSelected();
+            wait.waitUntilTheVisibilityOfElement(cartPage.getDivShippingFee());
             cartPage.getCartItemsDeleteBtn().click();
-            cartPage.waitUntilDeleteConfirmationPopUpIsVisible();
-
+            wait.waitUntilTheVisibilityOfElement(cartPage.getBtnDeleteConfirmationPopUp());
             cartPage.getCartDeleteOkBtn().click();
         }
 
-        cartPage.waitUntilDeleteConfirmationMsgIsDisplayed();
+        wait.waitUntilTheVisibilityOfElement(cartPage.getEmptyCartTxt());
         Assert.assertTrue(cartPage.getEmptyCartTxt().getText().equalsIgnoreCase("There are no items in this cart"));
 
     }
 
     @AfterClass
-    public void tearDown()
-    {
+    public void tearDown() {
         driver.quit();
-        driver=null;
+        driver = null;
     }
 
 }

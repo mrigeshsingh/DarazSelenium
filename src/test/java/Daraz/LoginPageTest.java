@@ -1,10 +1,8 @@
 package Daraz;
 
+import Daraz.Common.Waits;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
@@ -20,8 +18,7 @@ public class LoginPageTest extends base{
     public static Logger log = LogManager.getLogger(base.class.getName());
     LandingPage landingPage;
     LoginPage loginPage;
-    WebDriverWait wait;
-
+    Waits wait;
 
     @BeforeClass
     public void initialize() throws IOException {
@@ -29,20 +26,19 @@ public class LoginPageTest extends base{
         driver.get(prop.getProperty("url"));
         landingPage = new LandingPage(driver);
         loginPage = new LoginPage(driver);
-        wait = new WebDriverWait(driver, 10);
+        wait = new Waits(driver);
     }
 
     @Test
     public void validateLogin() {
         landingPage.getLoginBtn().click();
-        loginPage.getUsername().sendKeys("9841558034");
-        loginPage.getPassword().sendKeys("maestro@222");
+        loginPage.getUsername().sendKeys(prop.getProperty("username"));
+        loginPage.getPassword().sendKeys(prop.getProperty("password"));
         loginPage.getLogin().click();
-        wait.until(ExpectedConditions.visibilityOf(landingPage.getBtnAfterLogin()));
+        wait.waitUntilTheVisibilityOfElement(landingPage.getBtnAfterLogin());
+
         Assert.assertTrue(landingPage.getBtnAfterLogin().getText().contains("ACCOUNT"));
     }
-
-
 
     @AfterClass
     public  void tearDown()

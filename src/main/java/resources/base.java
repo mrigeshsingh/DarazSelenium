@@ -7,19 +7,17 @@ import java.io.IOException;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
-import com.gargoylesoftware.htmlunit.javascript.host.event.WebGLContextEvent;
 import org.apache.commons.io.FileUtils;
-import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.OutputType;
-import org.openqa.selenium.TakesScreenshot;
-import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
 
 
 public class base {
 
     public WebDriver driver;
     public Properties prop;
+    Actions actions;
 
     public WebDriver initializeDriver() throws IOException {
         prop = new Properties();
@@ -60,7 +58,16 @@ public class base {
         FileUtils.copyFile(src, new File("target\\screenshots\\" + result + "screenshot.png"));
     }
 
-
-
+//    public void hoverOver(WebElement elementCategory)
+//    {
+//        actions = new Actions(driver);
+//        actions.moveToElement(elementCategory).build().perform();
+//    }
+//
+//    public void hoverOverAndOpenSubCategoryInNewTab(WebElement elementSubCategory)
+//    {
+//        actions = new Actions(driver);
+//        actions.keyDown(Keys.CONTROL).click(elementSubCategory).keyUp(Keys.CONTROL).build().perform();
+//    }
 
 }
