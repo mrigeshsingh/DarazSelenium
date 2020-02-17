@@ -25,7 +25,7 @@ public class CartPage {
     private WebElement btnDeleteAllCartItems;
 
 
-    @FindBy(xpath = "//div[@class='list-header-left'] //input[@type='checkbox']")
+    @FindBy(xpath = "//div[@class='list-header-main'] //input[@type='checkbox']")
     private WebElement checkBoxSelectAll;
 
     @FindAll({@FindBy(xpath = "//div[@class='cart-empty-text']")})
