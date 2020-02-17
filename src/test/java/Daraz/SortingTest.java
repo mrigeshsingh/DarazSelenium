@@ -45,7 +45,6 @@ public class SortingTest extends base {
             String stringPrice1 = priceList.get(k).getText();
             String stringPrice2 = priceList.get(k + 1).getText();
             int intPriceValue1 = Integer.parseInt(stringPrice1.replaceAll("[^0-9]", ""));
-            //System.out.println(intPriceValue1);
             int intPriceValue2 = Integer.parseInt(stringPrice2.replaceAll("[^0-9]", ""));
             if (intPriceValue1 > intPriceValue2) {
                 Assert.assertTrue(false);
@@ -56,7 +55,7 @@ public class SortingTest extends base {
     }
 
     @Test
-    public void priceHighToLowTest() throws InterruptedException {
+    public void priceHighToLowTest(){
         landingPage.getSearchBar().sendKeys(prop.getProperty("searchItem"));
         landingPage.getSearchBar().sendKeys(Keys.ENTER);
         sort.highToLow();
