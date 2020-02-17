@@ -38,8 +38,15 @@ public class SearchPage {
     @FindBy(xpath = "//div[@class='ant-modal-body']")
     private WebElement divAddToCartPopUp;
 
+    @FindAll({@FindBy(xpath = "//span[@class='c13VH6']")})
+    private List<WebElement> allPrice;
+
     public WebElement getErrorTxt() {
         return txtError;
+    }
+
+    public List<WebElement> getPriceList() {
+        return allPrice;
     }
 
     public List<WebElement> getSearchItems() {

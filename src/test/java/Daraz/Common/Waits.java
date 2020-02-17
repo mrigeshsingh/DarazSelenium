@@ -6,25 +6,28 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import java.util.List;
+
 public class Waits {
     public WebDriver driver;
     WebDriverWait wait;
     CategoryPage categoryPage;
 
-    public  Waits(WebDriver driver)
-    {
+    public Waits(WebDriver driver) {
         this.driver = driver;
-        wait = new WebDriverWait(driver,10);
+        wait = new WebDriverWait(driver, 10);
         categoryPage = new CategoryPage(driver);
     }
 
-    public  void waitUntilTheVisibilityOfElement(WebElement element)
-    {
+    public void waitUntilTheVisibilityOfElement(WebElement element) {
         wait.until(ExpectedConditions.visibilityOf(element));
     }
 
-    public boolean waitUntilSubCategoryPageLoad()
+    public  void waitUntiltextPresentInElemet(WebElement element, String text)
     {
+        wait.until(ExpectedConditions.textToBePresentInElement(element,text));
+    }
+    public boolean waitUntilSubCategoryPageLoad() {
         wait.until(ExpectedConditions.visibilityOf(categoryPage.getDivLeftFilterColumn()));
         wait.until(ExpectedConditions.visibilityOf(categoryPage.getDivSorting()));
         wait.until(ExpectedConditions.visibilityOf(categoryPage.getDivAllItems()));

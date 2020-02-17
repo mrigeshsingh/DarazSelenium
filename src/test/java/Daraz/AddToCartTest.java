@@ -12,6 +12,7 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import resources.base;
@@ -71,6 +72,11 @@ public class AddToCartTest extends base {
 
     }
 
+    @AfterMethod
+    public void naviateToInitialUrl()
+    {
+        driver.get(prop.getProperty("url"));
+    }
     @AfterClass
     public void teardown() {
         driver.close();
