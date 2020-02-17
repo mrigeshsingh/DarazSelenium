@@ -25,6 +25,6 @@ public class Login extends base {
         loginPage.getUsername().sendKeys("9841558034");
         loginPage.getPassword().sendKeys("maestro@222");
         loginPage.getLogin().click();
-        wait.waitUntilTheVisibilityOfElement(landingPage.getNavigationBar());
+        wait.waitUntiltextPresentInElemet(landingPage.getBtnAfterLogin(),"ACCOUNT");
     }
 }
