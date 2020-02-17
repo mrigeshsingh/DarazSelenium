@@ -44,6 +44,9 @@ public class LandingPage {
     @FindBy(xpath = "//a[@class='button J_LoadMoreButton']")
     private WebElement btnLoadMore;
 
+    @FindBy(xpath = "//a[@id='acc-alert-close']")
+    private WebElement btnBeFriendClose;
+
 
     public WebElement getNavigationBar() {
         return divNavigationBar;
@@ -77,6 +80,11 @@ public class LandingPage {
     public WebElement getBtnLoadMore()
     {
         return btnLoadMore;
+    }
+
+    public WebElement getBtnBeFriendClose()
+    {
+        return btnBeFriendClose;
     }
 }
 	
