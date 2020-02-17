@@ -1,15 +1,14 @@
 package Daraz;
 
 import Daraz.Common.Hover;
+import Daraz.Common.Waits;
 import Daraz.Common.WindowHandles;
 import Daraz.pageObjects.CategoryPage;
 import Daraz.pageObjects.LandingPage;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebElement;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.Test;
+import org.testng.annotations.*;
 import resources.base;
 
 import java.io.IOException;
@@ -21,6 +20,7 @@ public class OpenAllCategoryPagesTest extends base {
     Hover hover;
     CategoryPage categoryPage;
     WindowHandles windowHandles;
+    Waits wait;
 
     @BeforeClass
     public void initialize() throws IOException {
@@ -30,6 +30,20 @@ public class OpenAllCategoryPagesTest extends base {
         hover = new Hover(driver);
         categoryPage = new CategoryPage(driver);
         windowHandles = new WindowHandles(driver);
+        wait = new Waits(driver);
+    }
+
+    @BeforeMethod
+    public void removeBeFriendsPopUp() {
+
+        try {
+            wait.waitUntilTheVisibilityOfElement(landingPage.getBtnBeFriendClose());
+            if (landingPage.getBtnBeFriendClose().isDisplayed()) {
+                landingPage.getBtnBeFriendClose().click();
+            }
+        } catch (Exception e) {
+            log.info("Friends with Daraz popup element not found");
+        }
     }
 
     @Test
