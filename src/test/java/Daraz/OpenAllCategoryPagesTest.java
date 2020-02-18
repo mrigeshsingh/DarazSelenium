@@ -49,7 +49,7 @@ public class OpenAllCategoryPagesTest extends base {
     @Test
     public void openAllCategoryPagesTest() {
         List<WebElement> allCategories = landingPage.getAllCategories();
-        for (int k = 0; k < allCategories.size() - 10; k++) {
+        for (int k = 0; k < allCategories.size() - 11; k++) {
             hover.hoverOver(allCategories.get(k));
 
             List<WebElement> subCategories = landingPage.getSubcategories(k + 1);
