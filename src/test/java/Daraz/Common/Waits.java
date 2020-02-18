@@ -15,7 +15,7 @@ public class Waits {
 
     public Waits(WebDriver driver) {
         this.driver = driver;
-        wait = new WebDriverWait(driver, 30);
+        wait = new WebDriverWait(driver, 60);
         categoryPage = new CategoryPage(driver);
     }
 
