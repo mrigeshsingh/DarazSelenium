@@ -19,7 +19,7 @@ public class SearchPage {
         // TODO Auto-generated constructor stub
         this.driver = driver;
         PageFactory.initElements(driver, this);
-        wait = new WebDriverWait(driver, 10);
+        wait = new WebDriverWait(driver, 60);
     }
 
 
