@@ -17,10 +17,10 @@ public class MyDOMXMLParser {
         parser.getUsernameOrPassword("username");
     }
 
-    public String getUsernameOrPassword(String usernaneOrPassword) {
+    public String getUsernameOrPassword(String usernameOrPassword) {
         String usrOrPwd = null;
-        if(usernaneOrPassword == "username")
-            itr = itr + 1;
+        if(usernameOrPassword == "username"){itr = itr + 1;}
+
         System.out.println(itr);
 
         try {
@@ -33,18 +33,22 @@ public class MyDOMXMLParser {
             Document doc = db.parse(file);
             doc.getDocumentElement().normalize();
             NodeList nodeList = doc.getElementsByTagName("user");
-            System.out.println(nodeList.getLength());
+            //System.out.println(nodeList.getLength());
 
             Node node = nodeList.item(itr);
             if (node.getNodeType() == Node.ELEMENT_NODE) {
                 Element eElement = (Element) node;
-                usrOrPwd = (eElement.getElementsByTagName(usernaneOrPassword).item(0).getTextContent());
+                usrOrPwd = (eElement.getElementsByTagName(usernameOrPassword).item(0).getTextContent());
                 System.out.println(usrOrPwd);
 
             }
 
-            if (itr == nodeList.getLength()-1)
-                itr=-1;
+            if (usernameOrPassword == "password"){
+                if( itr == nodeList.getLength()-1){
+                    itr=-1;
+                }
+            }
+
 
         } catch (Exception e) {
             e.printStackTrace();
